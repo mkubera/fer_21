@@ -1,0 +1,160 @@
+@import "./settings/_reset";
+@import "./settings/_vars";
+@import "./settings/_typography";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+// HERO
+.hero {
+  margin-bottom: 1rem;
+
+  .container {
+    width: 90%;
+    background-color: #fff;
+    border-bottom: 0.2rem solid #999;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.hero-intro {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 800;
+  }
+  p {
+    font-size: 2.1rem;
+    line-height: 3.2rem;
+  }
+}
+
+.hero-btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.hero-btn-ok {
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0;
+  color: #fff;
+  background-color: $color-btn;
+  font-weight: 800;
+  padding: 1.4rem 0;
+  border-radius: 0.5rem;
+}
+
+.hero-btn-info {
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0;
+  background-color: $color-bg;
+  font-weight: 800;
+  padding: 1.4rem 0;
+  border-radius: 0.5rem;
+}
+
+@media all and (min-width: $tablet) {
+  .hero-intro {
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+
+    h2 {
+      font-size: 4.2rem;
+    }
+    p {
+      font-size: 3.8rem;
+      line-height: 5.6rem;
+    }
+  }
+
+  .hero-btn-ok {
+    font-size: 2.8rem;
+    padding: 2rem 0;
+  }
+  .hero-btn-info {
+    font-size: 2.8rem;
+    padding: 2rem 0;
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .hero {
+    .container {
+      padding: 7rem;
+    }
+  }
+  .hero-intro {
+    text-align: left;
+    width: 55%;
+    h2 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 4rem;
+    }
+  }
+  .hero-btns {
+    width: 35%;
+  }
+}
+
+// BLOG
+.blog {
+  margin-bottom: 2rem;
+
+  .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.blog-item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border-bottom: 0.2rem solid #999;
+}
+
+.blog-item-img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.blog-item-body {
+  padding: 2rem;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
+}
